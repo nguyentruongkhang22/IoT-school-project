@@ -2,7 +2,11 @@
 
 <div class="container">
     <%- include ('./partials/left') %>
-    <%- include ('./partials/right') %>
-</div>
+    <div id="right">
+        <% devices.forEach(element => { %>
+        <h1><%=element.name%></h1>
+        <% }) %>
+    </div>
 
+</div>
 <%- include ('./partials/footer') %>
